@@ -1,0 +1,1126 @@
+<!doctype html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Refúgio das Cachoeiras — Casa em Guapimirim · Serra dos Órgãos</title>
+    <meta
+      name="description"
+      content="Casa inteira de alto padrão para até 10 hóspedes em condomínio fechado com cachoeiras privativas em Guapimirim, a 10 min a pé do Parque Nacional da Serra dos Órgãos."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              emerald: {
+                deep: '#0B3B2E',
+                dark: '#07271E',
+              },
+              cream: {
+                warm: '#F5F1E8',
+                card: '#EDE7DA',
+              },
+              gold: {
+                brushed: '#C9A45C',
+              },
+              ink: {
+                dark: '#1C2421',
+                muted: '#5A6560',
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-[#F5F1E8] text-[#1C2421] antialiased selection:bg-[#0B3B2E] selection:text-[#F5F1E8]">
+    <!-- 1. Header / Navbar -->
+    <header
+      id="navbar"
+      class="fixed top-0 left-0 right-0 z-40 transition-all duration-500 bg-gradient-to-b from-black/55 via-black/25 to-transparent"
+    >
+      <div class="max-w-7xl mx-auto px-5 sm:px-8 h-20 flex items-center justify-between">
+        <!-- Logo -->
+        <a href="#inicio" class="flex items-center group focus:outline-none" aria-label="Refúgio das Cachoeiras - Início">
+          <img
+            src="images/logo-refugio.png"
+            alt="Refúgio das Cachoeiras"
+            class="h-14 w-14 sm:h-16 sm:w-16 object-contain transition-transform duration-300 group-hover:scale-105"
+          />
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center gap-8" aria-label="Navegação principal">
+          <a href="#inicio" class="text-[13px] tracking-[0.04em] text-white/90 hover:text-[#C9A45C] transition-colors duration-200">Início</a>
+          <a href="#a-casa" class="text-[13px] tracking-[0.04em] text-white/90 hover:text-[#C9A45C] transition-colors duration-200">A Casa</a>
+          <a href="#destaques" class="text-[13px] tracking-[0.04em] text-white/90 hover:text-[#C9A45C] transition-colors duration-200">Destaques</a>
+          <a href="#espacos" class="text-[13px] tracking-[0.04em] text-white/90 hover:text-[#C9A45C] transition-colors duration-200">Espaços</a>
+          <a href="#comodidades" class="text-[13px] tracking-[0.04em] text-white/90 hover:text-[#C9A45C] transition-colors duration-200">Comodidades</a>
+          <a href="#localizacao" class="text-[13px] tracking-[0.04em] text-white/90 hover:text-[#C9A45C] transition-colors duration-200">Localização</a>
+        </nav>
+
+        <!-- Right CTA & Mobile Toggle -->
+        <div class="flex items-center gap-3">
+          <a
+            href="https://wa.me/5521998474055?text=Ol%C3%A1!%20Vi%20o%20site%20do%20Ref%C3%BAgio%20Serra%20dos%20%C3%93rg%C3%A3os%20em%20Guapimirim%20e%20gostaria%20de%20consultar%20disponibilidade%20para%20reserva."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden sm:inline-flex items-center justify-center gap-2 border border-white/45 hover:border-[#C9A45C] hover:bg-[#C9A45C] hover:text-[#0B3B2E] text-white px-5 py-2.5 text-[11px] tracking-[0.18em] uppercase font-medium transition-all duration-300"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="w-3.5 h-3.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 10-7.8-4.5L3 21l4.6-1.2A8.96 8.96 0 0012 21z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.5 8.8c.2-.4.4-.4.6-.4h.5c.2 0 .4.1.5.4l.7 1.6c.1.2.1.4 0 .6l-.4.5c-.1.2-.2.3-.1.5.3.6.9 1.3 1.5 1.8.6.4 1.1.7 1.7.9.2.1.4 0 .5-.1l.6-.7c.2-.2.4-.2.6-.1l1.5.7c.2.1.4.3.4.5 0 .6-.4 1.3-1 1.6-.6.3-1.4.4-2.5 0-1.4-.5-2.9-1.4-4.2-2.7-1.2-1.2-2.1-2.6-2.5-4-.3-1-.1-1.9.3-2.5z" />
+            </svg>
+            <span>Reservar Agora</span>
+          </a>
+
+          <button
+            type="button"
+            id="mobile-menu-btn"
+            class="lg:hidden text-white p-2 rounded hover:bg-white/10 transition-colors cursor-pointer"
+            aria-label="Menu"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="w-6 h-6">
+              <path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Drawer -->
+      <div id="mobile-menu-drawer" class="hidden lg:hidden bg-[#0B3B2E] border-t border-[#C9A45C]/20 px-6 py-6 space-y-4 shadow-xl">
+        <nav class="flex flex-col space-y-3">
+          <a href="#inicio" class="text-sm tracking-wide text-white/90 hover:text-[#C9A45C] py-1.5 border-b border-white/10">Início</a>
+          <a href="#a-casa" class="text-sm tracking-wide text-white/90 hover:text-[#C9A45C] py-1.5 border-b border-white/10">A Casa</a>
+          <a href="#destaques" class="text-sm tracking-wide text-white/90 hover:text-[#C9A45C] py-1.5 border-b border-white/10">Destaques</a>
+          <a href="#espacos" class="text-sm tracking-wide text-white/90 hover:text-[#C9A45C] py-1.5 border-b border-white/10">Espaços</a>
+          <a href="#comodidades" class="text-sm tracking-wide text-white/90 hover:text-[#C9A45C] py-1.5 border-b border-white/10">Comodidades</a>
+          <a href="#localizacao" class="text-sm tracking-wide text-white/90 hover:text-[#C9A45C] py-1.5 border-b border-white/10">Localização</a>
+        </nav>
+        <a
+          href="https://wa.me/5521998474055?text=Ol%C3%A1!%20Vi%20o%20site%20do%20Ref%C3%BAgio%20Serra%20dos%20%C3%93rg%C3%A3os%20em%20Guapimirim%20e%20gostaria%20de%20consultar%20disponibilidade%20para%20reserva."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="w-full inline-flex items-center justify-center gap-2 border border-[#C9A45C] bg-[#C9A45C] text-[#0B3B2E] py-3 text-xs tracking-[0.18em] uppercase font-semibold"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="w-4 h-4">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 10-7.8-4.5L3 21l4.6-1.2A8.96 8.96 0 0012 21z" />
+          </svg>
+          <span>Reservar pelo WhatsApp</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <!-- 2. Cinematic Hero Scroll Section -->
+      <section id="inicio" class="relative h-[260vh] bg-[#07271E]" aria-label="Apresentação cinematográfica do refúgio">
+        <div class="sticky top-0 h-screen w-full overflow-hidden">
+          <!-- Scene 1: Drone Video (Desktop 16:9 / Mobile 9:16) -->
+          <div class="hero-scene absolute inset-0 will-change-transform" style="opacity: 1; transform: scale(1.02); transition: opacity 180ms linear;">
+            <video
+              data-desktop-src="videos/hero-scroll1-desktop.mp4"
+              data-mobile-src="videos/hero-scroll1-mobile.mp4"
+              src="videos/hero-scroll1-desktop.mp4"
+              poster="images/hero-exterior.jpg"
+              autoplay
+              loop
+              muted
+              playsinline
+              preload="auto"
+              class="w-full h-full object-cover object-center select-none pointer-events-none"
+            ></video>
+          </div>
+
+          <!-- Scene 2: Piscina Foto -->
+          <div class="hero-scene absolute inset-0 will-change-transform" style="opacity: 0; transform: scale(1.0); transition: opacity 180ms linear;">
+            <img
+              src="images/hero-piscina-noite.jpg"
+              alt="Piscina iluminada à noite"
+              class="w-full h-full object-cover object-center select-none"
+            />
+          </div>
+
+          <!-- Scene 3: Cachoeira Video (Desktop 16:9 / Mobile 9:16) -->
+          <div class="hero-scene absolute inset-0 will-change-transform" style="opacity: 0; transform: scale(1.0); transition: opacity 180ms linear;">
+            <video
+              data-desktop-src="videos/hero-scroll3-desktop.mp4"
+              data-mobile-src="videos/hero-scroll3-mobile.mp4"
+              src="videos/hero-scroll3-desktop.mp4"
+              poster="images/hero-cachoeira.jpg"
+              autoplay
+              loop
+              muted
+              playsinline
+              preload="auto"
+              class="w-full h-full object-cover object-center select-none pointer-events-none"
+            ></video>
+          </div>
+
+          <!-- Atmospheric Gradient Overlays -->
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-black/45 pointer-events-none"></div>
+          <div class="absolute inset-0 bg-gradient-to-r from-[#07271E]/65 via-transparent to-transparent pointer-events-none"></div>
+
+          <!-- Editorial Headline Layer -->
+          <div class="relative z-10 h-full max-w-7xl mx-auto px-5 sm:px-8 pt-24 flex flex-col justify-end pb-20 sm:pb-24">
+            <div class="max-w-2xl hero-text-enter">
+              <p id="hero-eyebrow" class="text-[11px] sm:text-xs uppercase tracking-[0.28em] text-[#C9A45C] mb-4 font-medium">
+                Guapimirim · Cidade do Dedo de Deus
+              </p>
+
+              <h1 id="hero-headline" class="font-serif-editorial text-4xl sm:text-6xl lg:text-[4.75rem] leading-[1.03] font-normal text-white whitespace-pre-line drop-shadow-sm">
+                Um Refúgio Que<br>Abraça a Natureza
+              </h1>
+
+              <div class="mt-8 flex flex-wrap items-center gap-4">
+                <button
+                  type="button"
+                  class="open-reserve-btn inline-flex items-center gap-3 bg-[#0B3B2E]/90 hover:bg-[#C9A45C] text-white hover:text-[#07271E] border border-[#C9A45C]/60 px-6 py-3.5 text-xs tracking-[0.18em] uppercase font-medium transition-all duration-300 cursor-pointer"
+                >
+                  <span>Ver Disponibilidade</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6l6 6-6 6" />
+                  </svg>
+                </button>
+
+                <a
+                  href="#a-casa"
+                  class="inline-flex items-center gap-2 text-white/85 hover:text-[#C9A45C] text-xs tracking-[0.18em] uppercase py-3 px-2 transition-colors"
+                >
+                  <span>Conhecer a Casa</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Scene Chapters Indicator (Bottom Right) -->
+            <div class="hidden md:flex items-center gap-3 absolute right-8 bottom-24">
+              <button
+                type="button"
+                data-index="0"
+                class="hero-chapter-btn flex items-center gap-2 px-3 py-1.5 text-[10px] tracking-[0.22em] uppercase transition-all cursor-pointer border border-[#C9A45C] bg-[#0B3B2E]/85 text-[#C9A45C]"
+              >
+                <span>01</span>
+              </button>
+              <button
+                type="button"
+                data-index="1"
+                class="hero-chapter-btn flex items-center gap-2 px-3 py-1.5 text-[10px] tracking-[0.22em] uppercase transition-all cursor-pointer border border-white/25 bg-black/25 text-white/70 hover:text-white hover:border-white/50"
+              >
+                <span>02</span>
+              </button>
+              <button
+                type="button"
+                data-index="2"
+                class="hero-chapter-btn flex items-center gap-2 px-3 py-1.5 text-[10px] tracking-[0.22em] uppercase transition-all cursor-pointer border border-white/25 bg-black/25 text-white/70 hover:text-white hover:border-white/50"
+              >
+                <span>03</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Bottom Center Scroll Indicator -->
+          <div
+            id="hero-scroll-indicator"
+            class="absolute bottom-7 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 pointer-events-none transition-opacity duration-500"
+          >
+            <span class="text-[10px] tracking-[0.35em] uppercase text-white/80">Scroll</span>
+            <span class="w-px h-7 bg-gradient-to-b from-white/80 to-transparent animate-pulse"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Editorial Intro -->
+      <section id="a-casa" class="bg-[#F5F1E8] text-[#1C2421]">
+        <div class="max-w-3xl mx-auto px-6 pt-24 pb-16 sm:pt-32 sm:pb-20 text-center">
+          <p class="text-[11px] uppercase tracking-[0.28em] text-[#7A6B4F] mb-4 font-medium">
+            Estrada do Limoeiro, Condomínio Alpha II · Guapimirim - RJ, 25940-000
+          </p>
+          <h2 class="font-serif-editorial text-4xl sm:text-5xl lg:text-[3.65rem] leading-[1.08] font-normal text-[#1C2421]">
+            Mais Que Quatro Paredes
+          </h2>
+          <p class="mt-7 text-sm sm:text-base leading-[1.85] text-[#5A6560] font-light">
+            As manhãs tranquilas, os almoços longos na varanda gourmet, os momentos que reúnem família
+            e amigos — a vida desacelera aqui. Cercada pela Mata Atlântica e a cerca de 10 minutos a
+            pé do Parque Nacional da Serra dos Órgãos, a casa oferece ampla área verde, caminhos
+            arborizados, piscina privativa, lareira interna e o som constante da cachoeira dia e noite.
+          </p>
+        </div>
+
+        <div class="w-full h-[55vh] sm:h-[74vh] overflow-hidden relative">
+          <img
+            src="images/editorial-jantar.jpg"
+            alt="Área de jantar panorâmica integrada à sala de estar e jardim"
+            class="w-full h-full object-cover object-center"
+            loading="lazy"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none"></div>
+        </div>
+
+        <div class="max-w-5xl mx-auto px-6 py-16 sm:py-24">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 text-center">
+            <div class="space-y-1.5">
+              <h3 class="font-serif-editorial text-2xl sm:text-[1.75rem] font-normal text-[#1C2421]">10 Hóspedes</h3>
+              <p class="text-xs sm:text-sm text-[#5A6560] tracking-wide font-light">3 Quartos & 3 Banheiros</p>
+            </div>
+            <div class="space-y-1.5">
+              <h3 class="font-serif-editorial text-2xl sm:text-[1.75rem] font-normal text-[#1C2421]">2 Cachoeiras</h3>
+              <p class="text-xs sm:text-sm text-[#5A6560] tracking-wide font-light">Exclusivas do Condomínio</p>
+            </div>
+            <div class="space-y-1.5">
+              <h3 class="font-serif-editorial text-2xl sm:text-[1.75rem] font-normal text-[#1C2421]">10 Min a Pé</h3>
+              <p class="text-xs sm:text-sm text-[#5A6560] tracking-wide font-light">Parque Nacional da Serra</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Ambientes & Estrutura (Conforto Redefinido) -->
+      <section id="destaques" class="bg-[#0B3B2E] text-white py-20 sm:py-28 px-5 sm:px-8 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center max-w-2xl mx-auto mb-14 sm:mb-16">
+            <p class="text-[11px] uppercase tracking-[0.28em] text-[#C9A45C] mb-3 font-medium">Ambientes & Estrutura</p>
+            <h2 class="font-serif-editorial text-4xl sm:text-5xl lg:text-[3.5rem] font-normal text-[#F5F1E8]">Conforto Redefinido</h2>
+          </div>
+
+          <div class="relative grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
+            <button
+              type="button"
+              class="open-gallery-btn group relative text-left overflow-hidden bg-[#07271E] aspect-[4/3] md:aspect-[4/4.2] cursor-pointer focus:outline-none"
+              data-img="images/showcase-gourmet.jpg"
+            >
+              <img
+                src="images/showcase-gourmet.jpg"
+                alt="Varanda Gourmet Completa"
+                loading="lazy"
+                class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
+                <h3 class="font-serif-editorial text-xl sm:text-2xl text-white">Varanda Gourmet Completa</h3>
+                <p class="mt-1.5 text-xs text-white/75 line-clamp-2 font-light">Churrasqueira a carvão, churrasqueira a bafo, fogão a lenha rústico e espaço bartender exclusivo.</p>
+              </div>
+            </button>
+
+            <button
+              type="button"
+              class="open-gallery-btn group relative text-left overflow-hidden bg-[#07271E] aspect-[4/3] md:aspect-[4/4.2] cursor-pointer focus:outline-none"
+              data-img="images/showcase-sala.jpg"
+            >
+              <img
+                src="images/showcase-sala.jpg"
+                alt="Living & Lareira em Pedra"
+                loading="lazy"
+                class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
+                <h3 class="font-serif-editorial text-xl sm:text-2xl text-white">Living & Lareira em Pedra</h3>
+                <p class="mt-1.5 text-xs text-white/75 line-clamp-2 font-light">Sala de estar integrada com sofás amplos, lareira acolhedora e vista panorâmica para o verde.</p>
+              </div>
+              <div class="hidden md:flex absolute inset-0 items-center justify-center pointer-events-none">
+                <span class="w-28 h-28 rounded-full bg-white/15 backdrop-blur-md border border-white/50 text-white flex flex-col items-center justify-center text-[10px] tracking-[0.22em] uppercase font-medium shadow-2xl group-hover:bg-[#C9A45C] group-hover:text-[#07271E] group-hover:border-[#C9A45C] transition-all duration-300">
+                  <span>Ver</span>
+                  <span>Galeria</span>
+                </span>
+              </div>
+            </button>
+
+            <button
+              type="button"
+              class="open-gallery-btn group relative text-left overflow-hidden bg-[#07271E] aspect-[4/3] md:aspect-[4/4.2] cursor-pointer focus:outline-none"
+              data-img="images/showcase-cozinha.jpg"
+            >
+              <img
+                src="images/showcase-cozinha.jpg"
+                alt="Cozinha Equipada & Jantar"
+                loading="lazy"
+                class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
+                <h3 class="font-serif-editorial text-xl sm:text-2xl text-white">Cozinha Equipada & Jantar</h3>
+                <p class="mt-1.5 text-xs text-white/75 line-clamp-2 font-light">Mesa de jantar para até 10 pessoas, cozinha completa com freezer, forno, cafeteira e louçaria.</p>
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Espaços & Natureza -->
+      <section id="espacos" class="bg-[#F5F1E8] text-[#1C2421] py-20 sm:py-28 px-5 sm:px-8">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
+            <p class="text-[11px] uppercase tracking-[0.28em] text-[#7A6B4F] mb-3 font-medium">Experiências & Ambientes</p>
+            <h2 class="font-serif-editorial text-4xl sm:text-5xl lg:text-[3.6rem] font-normal text-[#1C2421]">Refúgio na natureza</h2>
+            <p class="mt-4 text-sm sm:text-base text-[#5A6560] font-light leading-relaxed">
+              Uma curadoria de espaços pensados para desacelerar em família ou entre amigos — da piscina iluminada às trilhas e cachoeiras da Mata Atlântica.
+            </p>
+          </div>
+
+          <!-- Category Tabs -->
+          <div class="flex flex-wrap items-center justify-center sm:justify-start gap-6 sm:gap-12 border-b border-[#1C2421]/10 pb-4 mb-10">
+            <button
+              type="button"
+              data-tab="lazer"
+              class="space-tab-btn relative inline-flex items-center gap-2.5 text-xs tracking-[0.2em] uppercase pb-2 transition-colors cursor-pointer text-[#0B3B2E] font-semibold"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4 text-[#C9A45C]">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 9c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 2-2M3 15c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 2-2" />
+              </svg>
+              <span>ÁREA EXTERNA & LAZER</span>
+              <span class="tab-underline absolute -bottom-[17px] left-0 right-0 h-[2px] bg-[#0B3B2E]"></span>
+            </button>
+            <button
+              type="button"
+              data-tab="interior"
+              class="space-tab-btn relative inline-flex items-center gap-2.5 text-xs tracking-[0.2em] uppercase pb-2 transition-colors cursor-pointer text-[#5A6560] hover:text-[#1C2421] font-medium"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4 text-[#C9A45C]">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 11l9-7 9 7v9a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1v-9z" />
+              </svg>
+              <span>CONFORTO INTERNO</span>
+            </button>
+            <button
+              type="button"
+              data-tab="natureza"
+              class="space-tab-btn relative inline-flex items-center gap-2.5 text-xs tracking-[0.2em] uppercase pb-2 transition-colors cursor-pointer text-[#5A6560] hover:text-[#1C2421] font-medium"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4 text-[#C9A45C]">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 19l6-10 4 6 3-4 5 8H3z" />
+              </svg>
+              <span>CONDOMÍNIO & SERRA</span>
+            </button>
+          </div>
+
+          <!-- Cards Grid (populated via script.js) -->
+          <div id="space-cards-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7"></div>
+        </div>
+      </section>
+
+      <!-- 6. Onde Você Vai Dormir (Full-Bleed Green Background) -->
+      <section id="comodidades">
+        <div class="bg-[#0B3B2E] text-white py-20 sm:py-28 px-5 sm:px-8">
+          <div class="max-w-7xl mx-auto">
+            <div class="mb-10 sm:mb-12">
+              <p class="text-[11px] uppercase tracking-[0.28em] text-[#C9A45C] mb-2 font-medium">Acomodações · 10 Hóspedes</p>
+              <h2 class="font-serif-editorial text-3xl sm:text-5xl font-normal text-[#F5F1E8]">Onde Você Vai Dormir</h2>
+            </div>
+
+            <div class="relative">
+              <button
+                type="button"
+                id="prev-bedroom-btn"
+                aria-label="Quarto anterior"
+                class="md:hidden absolute -left-2 top-[28%] z-10 w-10 h-10 rounded-full bg-[#07271E]/90 hover:bg-[#C9A45C] text-white hover:text-[#07271E] border border-[#C9A45C]/40 flex items-center justify-center shadow-lg transition-colors cursor-pointer"
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 6l-6 6 6 6" />
+                </svg>
+              </button>
+
+              <button
+                type="button"
+                id="next-bedroom-btn"
+                aria-label="Próximo quarto"
+                class="md:hidden absolute -right-2 top-[28%] z-10 w-10 h-10 rounded-full bg-[#07271E]/90 hover:bg-[#C9A45C] text-white hover:text-[#07271E] border border-[#C9A45C]/40 flex items-center justify-center shadow-lg transition-colors cursor-pointer"
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-5 h-5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 6l6 6-6 6" />
+                </svg>
+              </button>
+
+              <div
+                id="bedrooms-track"
+                class="flex md:grid md:grid-cols-3 gap-7 lg:gap-9 overflow-x-auto md:overflow-visible snap-x snap-mandatory scroll-smooth pb-2 md:pb-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+              >
+                <!-- Quarto 1 -->
+                <article class="shrink-0 w-[86%] sm:w-[70%] md:w-auto snap-center group flex flex-col">
+                  <button
+                    type="button"
+                    class="open-gallery-btn block w-full aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer bg-[#07271E] shadow-lg"
+                    data-img="images/card-quarto1.jpg"
+                  >
+                    <img
+                      src="images/card-quarto1.jpg"
+                      alt="Quarto 1"
+                      loading="lazy"
+                      class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                  </button>
+                  <div class="pt-5 px-0.5 flex-1 flex flex-col">
+                    <h3 class="font-serif-editorial text-2xl sm:text-[1.7rem] text-[#F5F1E8] leading-tight">Quarto 1</h3>
+                    <p class="mt-2.5 text-[13px] sm:text-sm text-white/75 font-light leading-relaxed">
+                      Suíte acolhedora com cama de casal, cabeceira estofada, enxoval branco completo e cortina blackout para noites tranquilas.
+                    </p>
+                    <ul class="mt-5 grid grid-cols-2 gap-x-4 gap-y-2.5 text-xs sm:text-[13px] text-white/85">
+                      <li class="flex items-center gap-2 min-w-0">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4 text-[#C9A45C] shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M3 18v-5a2 2 0 012-2h14a2 2 0 012 2v5M3 15h18M5 11V7a1 1 0 011-1h5v5m2-5h5a1 1 0 011 1v4"/></svg>
+                        <span class="truncate font-light">1 cama de casal</span>
+                      </li>
+                      <li class="flex items-center gap-2 min-w-0">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4 text-[#C9A45C] shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5h18M5 5v14c2.5-1 3.5-3.5 3.5-7V5M19 5v14c-2.5-1-3.5-3.5-3.5-7V5"/></svg>
+                        <span class="truncate font-light">Cortina blackout</span>
+                      </li>
+                      <li class="flex items-center gap-2 min-w-0">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4 text-[#C9A45C] shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3l1.6 4.4L18 9l-4.4 1.6L12 15l-1.6-4.4L6 9l4.4-1.6L12 3z"/></svg>
+                        <span class="truncate font-light">Enxoval & toalhas</span>
+                      </li>
+                      <li class="flex items-center gap-2 min-w-0">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4 text-[#C9A45C] shrink-0"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M9.5 11v2M14.5 11v2"/></svg>
+                        <span class="truncate font-light">Espaço para roupas</span>
+                      </li>
+                      <li class="flex items-center gap-2 min-w-0">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4 text-[#C9A45C] shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M8 4h8l2 7H6l2-7zM12 11v8M8.5 19h7"/></svg>
+                        <span class="truncate font-light">Abajur de cabeceira</span>
+                      </li>
+                      <li class="flex items-center gap-2 min-w-0">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4 text-[#C9A45C] shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 9.5a11.5 11.5 0 0115 0M7.5 13a7.2 7.2 0 019 0M10.5 16.5a3 3 0 013 0M12 19.5h.01"/></svg>
+                        <span class="truncate font-light">Wi-Fi</span>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+
+                <!-- Quarto 2 -->
+                <article class="shrink-0 w-[86%] sm:w-[70%] md:w-auto snap-center group flex flex-col">
+                  <button
+                    type="button"
+                    class="open-gallery-btn block w-full aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer bg-[#07271E] shadow-lg"
+                    data-img="images/card-quarto2.jpg"
+                  >
+                    <img
+                      src="images/card-quarto2.jpg"
+                      alt="Quarto 2"
+                      loading="lazy"
+                      class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                  </button>
+                  <div class="pt-5 px-0.5 flex-1 flex flex-col">
+                    <h3 class="font-serif-editorial text-2xl sm:text-[1.7rem] text-[#F5F1E8] leading-tight">Quarto 2</h3>
+                    <p class="mt-2.5 text-[13px] sm:text-sm text-white/75 font-light leading-relaxed">
+                      Quarto climatizado com cama de casal, ar-condicionado, TV instalada na parede, espelho amplo e iluminação quente.
+                    </p>
+                    <ul class="mt-5 grid grid-cols-2 gap-x-4 gap-y-2.5 text-xs sm:text-[13px] text-white/85">
+                      <li class="flex items-center gap-2 min-w-0">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4 text-[#C9A45C] shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M3 18v-5a2 2 0 012-2h14a2 2 0 012 2v5M3 15h18M5 11V7a1 1 0 011-1h5v5m2-5h5a1 1 0 011 1v4"/></svg>
+                        <span class="truncate font-light">1 cama de casal</span>
+                      </li>
+                      <li class="flex items-center gap-2 min-w-0">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4 text-[#C9A45C] shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M4.5 7.5l15 9M19.5 7.5l-15 9M9.5 4.5L12 7l2.5-2.5M9.5 19.5L12 17l2.5 2.5"/></svg>
+                        <span class="truncate font-light">Ar-condicionado</span>
+                      </li>
+                      <li class="flex items-center gap-2 min-w-0">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4 text-[#C9A45C] shrink-0"><rect x="3" y="5" width="18" height="12" rx="2"/><path stroke-linecap="round" stroke-linejoin="round" d="M8 21h8M12 17v4"/></svg>
+                        <span class="truncate font-light">TV instalada</span>
+                      </li>
+                      <li class="flex items-center gap-2 min-w-0">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4 text-[#C9A45C] shrink-0"><rect x="6" y="3" width="12" height="18" rx="2"/><path stroke-linecap="round" stroke-linejoin="round" d="M9.5 8.5l3-3M9.5 13l5-5"/></svg>
+                        <span class="truncate font-light">Espelho amplo</span>
+                      </li>
+                      <li class="flex items-center gap-2 min-w-0">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4 text-[#C9A45C] shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5h18M5 5v14c2.5-1 3.5-3.5 3.5-7V5M19 5v14c-2.5-1-3.5-3.5-3.5-7V5"/></svg>
+                        <span class="truncate font-light">Cortina blackout</span>
+                      </li>
+                      <li class="flex items-center gap-2 min-w-0">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4 text-[#C9A45C] shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 9.5a11.5 11.5 0 0115 0M7.5 13a7.2 7.2 0 019 0M10.5 16.5a3 3 0 013 0M12 19.5h.01"/></svg>
+                        <span class="truncate font-light">Wi-Fi</span>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+
+                <!-- Quarto 3 -->
+                <article class="shrink-0 w-[86%] sm:w-[70%] md:w-auto snap-center group flex flex-col">
+                  <button
+                    type="button"
+                    class="open-gallery-btn block w-full aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer bg-[#07271E] shadow-lg"
+                    data-img="images/card-quarto3.jpg"
+                  >
+                    <img
+                      src="images/card-quarto3.jpg"
+                      alt="Quarto 3"
+                      loading="lazy"
+                      class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                  </button>
+                  <div class="pt-5 px-0.5 flex-1 flex flex-col">
+                    <h3 class="font-serif-editorial text-2xl sm:text-[1.7rem] text-[#F5F1E8] leading-tight">Quarto 3</h3>
+                    <p class="mt-2.5 text-[13px] sm:text-sm text-white/75 font-light leading-relaxed">
+                      Ambiente amplo pensado para famílias e grupos, equipado com duas camas de casal, um beliche, ar-condicionado split e cortinas blackout.
+                    </p>
+                    <ul class="mt-5 grid grid-cols-2 gap-x-4 gap-y-2.5 text-xs sm:text-[13px] text-white/85">
+                      <li class="flex items-center gap-2 min-w-0">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4 text-[#C9A45C] shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M3 18v-5a2 2 0 012-2h14a2 2 0 012 2v5M3 15h18M5 11V7a1 1 0 011-1h5v5m2-5h5a1 1 0 011 1v4"/></svg>
+                        <span class="truncate font-light">2 camas de casal</span>
+                      </li>
+                      <li class="flex items-center gap-2 min-w-0">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4 text-[#C9A45C] shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M3 18v-5a2 2 0 012-2h14a2 2 0 012 2v5M3 15h18M5 11V7a1 1 0 011-1h5v5m2-5h5a1 1 0 011 1v4"/></svg>
+                        <span class="truncate font-light">1 beliche</span>
+                      </li>
+                      <li class="flex items-center gap-2 min-w-0">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4 text-[#C9A45C] shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M4.5 7.5l15 9M19.5 7.5l-15 9M9.5 4.5L12 7l2.5-2.5M9.5 19.5L12 17l2.5 2.5"/></svg>
+                        <span class="truncate font-light">Ar-condicionado split</span>
+                      </li>
+                      <li class="flex items-center gap-2 min-w-0">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4 text-[#C9A45C] shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5h18M5 5v14c2.5-1 3.5-3.5 3.5-7V5M19 5v14c-2.5-1-3.5-3.5-3.5-7V5"/></svg>
+                        <span class="truncate font-light">Cortinas blackout</span>
+                      </li>
+                      <li class="flex items-center gap-2 min-w-0">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4 text-[#C9A45C] shrink-0"><rect x="5" y="3" width="14" height="18" rx="1.5"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M9.5 11v2M14.5 11v2"/></svg>
+                        <span class="truncate font-light">Espaço para bagagem</span>
+                      </li>
+                      <li class="flex items-center gap-2 min-w-0">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4 text-[#C9A45C] shrink-0"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 9.5a11.5 11.5 0 0115 0M7.5 13a7.2 7.2 0 019 0M10.5 16.5a3 3 0 013 0M12 19.5h.01"/></svg>
+                        <span class="truncate font-light">Wi-Fi</span>
+                      </li>
+                    </ul>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Comodidades Completas -->
+        <div class="bg-[#EDE7DA] text-[#1C2421] py-20 sm:py-28 px-5 sm:px-8 border-t border-[#1C2421]/10">
+          <div class="max-w-7xl mx-auto">
+            <div class="max-w-2xl mb-10">
+              <p class="text-[11px] uppercase tracking-[0.28em] text-[#7A6B4F] mb-2 font-medium">O Que Esse Lugar Oferece</p>
+              <h2 class="font-serif-editorial text-3xl sm:text-5xl font-normal text-[#1C2421]">Comodidades Completas</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+              <!-- Group 1 -->
+              <div class="bg-[#F5F1E8] p-6 border border-[#1C2421]/10">
+                <h3 class="font-serif-editorial text-xl text-[#0B3B2E] border-b border-[#1C2421]/10 pb-3 mb-4">Lazer & Área Externa</h3>
+                <ul class="space-y-2.5">
+                  <li class="flex items-start gap-2.5 text-xs sm:text-[13px] text-[#5A6560] font-light">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-4 h-4 text-[#0B3B2E] shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                    <span>Piscina privativa à disposição da casa</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-xs sm:text-[13px] text-[#5A6560] font-light">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-4 h-4 text-[#0B3B2E] shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                    <span>2 cachoeiras próprias do condomínio</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-xs sm:text-[13px] text-[#5A6560] font-light">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-4 h-4 text-[#0B3B2E] shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                    <span>Acesso ao lago e campo de futebol em frente</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-xs sm:text-[13px] text-[#5A6560] font-light">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-4 h-4 text-[#0B3B2E] shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                    <span>Chuveiro externo, espreguiçadeiras e guarda-sol</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-xs sm:text-[13px] text-[#5A6560] font-light">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-4 h-4 text-[#0B3B2E] shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                    <span>Jardim gramado, rede na varanda e área de jantar externa</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Group 2 -->
+              <div class="bg-[#F5F1E8] p-6 border border-[#1C2421]/10">
+                <h3 class="font-serif-editorial text-xl text-[#0B3B2E] border-b border-[#1C2421]/10 pb-3 mb-4">Gastronomia & Convivência</h3>
+                <ul class="space-y-2.5">
+                  <li class="flex items-start gap-2.5 text-xs sm:text-[13px] text-[#5A6560] font-light">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-4 h-4 text-[#0B3B2E] shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                    <span>Espaço Bartender exclusivo</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-xs sm:text-[13px] text-[#5A6560] font-light">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-4 h-4 text-[#0B3B2E] shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                    <span>Churrasqueira ampla + churrasqueira a bafo</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-xs sm:text-[13px] text-[#5A6560] font-light">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-4 h-4 text-[#0B3B2E] shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                    <span>Fogão a lenha rústico e utensílios para churrasco</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-xs sm:text-[13px] text-[#5A6560] font-light">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-4 h-4 text-[#0B3B2E] shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                    <span>Cozinha completa com fogão, forno, freezer e micro-ondas</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-xs sm:text-[13px] text-[#5A6560] font-light">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-4 h-4 text-[#0B3B2E] shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                    <span>Cafeteira, torradeira, liquidificador e mesa de jantar</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Group 3 -->
+              <div class="bg-[#F5F1E8] p-6 border border-[#1C2421]/10">
+                <h3 class="font-serif-editorial text-xl text-[#0B3B2E] border-b border-[#1C2421]/10 pb-3 mb-4">Conforto, Clima & Trabalho</h3>
+                <ul class="space-y-2.5">
+                  <li class="flex items-start gap-2.5 text-xs sm:text-[13px] text-[#5A6560] font-light">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-4 h-4 text-[#0B3B2E] shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                    <span>Lareira interna em pedra e ar-condicionado</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-xs sm:text-[13px] text-[#5A6560] font-light">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-4 h-4 text-[#0B3B2E] shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                    <span>Wi-Fi, conexão Ethernet e espaço de trabalho exclusivo</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-xs sm:text-[13px] text-[#5A6560] font-light">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-4 h-4 text-[#0B3B2E] shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                    <span>TV, livros e material de leitura</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-xs sm:text-[13px] text-[#5A6560] font-light">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-4 h-4 text-[#0B3B2E] shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                    <span>Máquina de lavar, ferro de passar e água quente</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-xs sm:text-[13px] text-[#5A6560] font-light">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-4 h-4 text-[#0B3B2E] shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                    <span>Cortinas blackout e proteção de janela</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Group 4 -->
+              <div class="bg-[#F5F1E8] p-6 border border-[#1C2421]/10">
+                <h3 class="font-serif-editorial text-xl text-[#0B3B2E] border-b border-[#1C2421]/10 pb-3 mb-4">Acessibilidade & Segurança</h3>
+                <ul class="space-y-2.5">
+                  <li class="flex items-start gap-2.5 text-xs sm:text-[13px] text-[#5A6560] font-light">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-4 h-4 text-[#0B3B2E] shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                    <span>Estacionamento gratuito no local</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-xs sm:text-[13px] text-[#5A6560] font-light">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-4 h-4 text-[#0B3B2E] shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                    <span>Vaga de estacionamento acessível (PCD)</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-xs sm:text-[13px] text-[#5A6560] font-light">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-4 h-4 text-[#0B3B2E] shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                    <span>Caminho iluminado até a entrada dos hóspedes</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-xs sm:text-[13px] text-[#5A6560] font-light">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-4 h-4 text-[#0B3B2E] shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                    <span>Entrada privada e estadias longas (28+ dias)</span>
+                  </li>
+                  <li class="flex items-start gap-2.5 text-xs sm:text-[13px] text-[#5A6560] font-light">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-4 h-4 text-[#0B3B2E] shrink-0 mt-0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                    <span>Câmeras externas na rua do condomínio</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. Feedbacks de Clientes (Full-Bleed Green Background) -->
+      <section id="feedbacks" class="bg-[#0B3B2E] text-[#F5F1E8] py-20 sm:py-28 px-5 sm:px-8">
+        <div class="max-w-7xl mx-auto">
+          <div class="max-w-2xl mb-10 sm:mb-12">
+            <p class="text-[11px] uppercase tracking-[0.28em] text-[#C9A45C] mb-2 font-medium">Feedbacks · Conversas Reais</p>
+            <h3 class="font-serif-editorial text-3xl sm:text-4xl lg:text-5xl text-white">Feedbacks de Hóspedes</h3>
+            <p class="mt-2.5 text-xs sm:text-sm text-white/75 font-light max-w-xl">
+              Prints de conversas e avaliações enviadas por quem já viveu a experiência no refúgio.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <!-- Feedback Slot 1 -->
+            <div class="bg-[#07271E] border border-[#C9A45C]/25 rounded-2xl overflow-hidden flex flex-col">
+              <div class="w-full aspect-[9/14] p-5 flex flex-col justify-between bg-gradient-to-b from-[#082E23] to-[#062018]">
+                <div class="flex items-center justify-between border-b border-white/10 pb-3">
+                  <div class="flex items-center gap-2.5">
+                    <span class="w-7 h-7 rounded-full bg-[#C9A45C]/20 border border-[#C9A45C]/40 flex items-center justify-center text-[#C9A45C]">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="w-3.5 h-3.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 10-7.8-4.5L3 21l4.6-1.2A8.96 8.96 0 0012 21z" />
+                      </svg>
+                    </span>
+                    <div>
+                      <p class="text-[11px] font-medium text-white/90">Conversa · Print 01</p>
+                      <p class="text-[10px] text-white/50">WhatsApp</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-auto py-4 space-y-3">
+                  <div class="bg-[#0E4435] border border-white/10 rounded-xl rounded-tl-none p-3.5 text-xs text-white/80 font-light leading-relaxed">
+                    Espaço reservado para print de feedback de hóspede.
+                  </div>
+                  <div class="ml-auto max-w-[75%] bg-[#C9A45C]/15 border border-[#C9A45C]/30 rounded-xl rounded-tr-none px-3 py-2 text-[11px] text-[#E6D3A3] text-right font-light">
+                    Print do cliente
+                  </div>
+                </div>
+                <div class="border-t border-white/10 pt-3 flex items-center justify-between text-[10px] uppercase tracking-[0.2em] text-white/45">
+                  <span>Print WhatsApp</span>
+                  <span>9:16</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Feedback Slot 2 -->
+            <div class="bg-[#07271E] border border-[#C9A45C]/25 rounded-2xl overflow-hidden flex flex-col">
+              <div class="w-full aspect-[9/14] p-5 flex flex-col justify-between bg-gradient-to-b from-[#082E23] to-[#062018]">
+                <div class="flex items-center justify-between border-b border-white/10 pb-3">
+                  <div class="flex items-center gap-2.5">
+                    <span class="w-7 h-7 rounded-full bg-[#C9A45C]/20 border border-[#C9A45C]/40 flex items-center justify-center text-[#C9A45C]">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="w-3.5 h-3.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 10-7.8-4.5L3 21l4.6-1.2A8.96 8.96 0 0012 21z" />
+                      </svg>
+                    </span>
+                    <div>
+                      <p class="text-[11px] font-medium text-white/90">Conversa · Print 02</p>
+                      <p class="text-[10px] text-white/50">WhatsApp</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-auto py-4 space-y-3">
+                  <div class="bg-[#0E4435] border border-white/10 rounded-xl rounded-tl-none p-3.5 text-xs text-white/80 font-light leading-relaxed">
+                    Espaço reservado para print de feedback de hóspede.
+                  </div>
+                  <div class="ml-auto max-w-[75%] bg-[#C9A45C]/15 border border-[#C9A45C]/30 rounded-xl rounded-tr-none px-3 py-2 text-[11px] text-[#E6D3A3] text-right font-light">
+                    Print do cliente
+                  </div>
+                </div>
+                <div class="border-t border-white/10 pt-3 flex items-center justify-between text-[10px] uppercase tracking-[0.2em] text-white/45">
+                  <span>Print WhatsApp</span>
+                  <span>9:16</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Feedback Slot 3 -->
+            <div class="bg-[#07271E] border border-[#C9A45C]/25 rounded-2xl overflow-hidden flex flex-col">
+              <div class="w-full aspect-[9/14] p-5 flex flex-col justify-between bg-gradient-to-b from-[#082E23] to-[#062018]">
+                <div class="flex items-center justify-between border-b border-white/10 pb-3">
+                  <div class="flex items-center gap-2.5">
+                    <span class="w-7 h-7 rounded-full bg-[#C9A45C]/20 border border-[#C9A45C]/40 flex items-center justify-center text-[#C9A45C]">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="w-3.5 h-3.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 10-7.8-4.5L3 21l4.6-1.2A8.96 8.96 0 0012 21z" />
+                      </svg>
+                    </span>
+                    <div>
+                      <p class="text-[11px] font-medium text-white/90">Conversa · Print 03</p>
+                      <p class="text-[10px] text-white/50">WhatsApp</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-auto py-4 space-y-3">
+                  <div class="bg-[#0E4435] border border-white/10 rounded-xl rounded-tl-none p-3.5 text-xs text-white/80 font-light leading-relaxed">
+                    Espaço reservado para print de feedback de hóspede.
+                  </div>
+                  <div class="ml-auto max-w-[75%] bg-[#C9A45C]/15 border border-[#C9A45C]/30 rounded-xl rounded-tr-none px-3 py-2 text-[11px] text-[#E6D3A3] text-right font-light">
+                    Print do cliente
+                  </div>
+                </div>
+                <div class="border-t border-white/10 pt-3 flex items-center justify-between text-[10px] uppercase tracking-[0.2em] text-white/45">
+                  <span>Print WhatsApp</span>
+                  <span>9:16</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Feedback Slot 4 -->
+            <div class="bg-[#07271E] border border-[#C9A45C]/25 rounded-2xl overflow-hidden flex flex-col">
+              <div class="w-full aspect-[9/14] p-5 flex flex-col justify-between bg-gradient-to-b from-[#082E23] to-[#062018]">
+                <div class="flex items-center justify-between border-b border-white/10 pb-3">
+                  <div class="flex items-center gap-2.5">
+                    <span class="w-7 h-7 rounded-full bg-[#C9A45C]/20 border border-[#C9A45C]/40 flex items-center justify-center text-[#C9A45C]">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="w-3.5 h-3.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 10-7.8-4.5L3 21l4.6-1.2A8.96 8.96 0 0012 21z" />
+                      </svg>
+                    </span>
+                    <div>
+                      <p class="text-[11px] font-medium text-white/90">Conversa · Print 04</p>
+                      <p class="text-[10px] text-white/50">WhatsApp</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-auto py-4 space-y-3">
+                  <div class="bg-[#0E4435] border border-white/10 rounded-xl rounded-tl-none p-3.5 text-xs text-white/80 font-light leading-relaxed">
+                    Espaço reservado para print de feedback de hóspede.
+                  </div>
+                  <div class="ml-auto max-w-[75%] bg-[#C9A45C]/15 border border-[#C9A45C]/30 rounded-xl rounded-tr-none px-3 py-2 text-[11px] text-[#E6D3A3] text-right font-light">
+                    Print do cliente
+                  </div>
+                </div>
+                <div class="border-t border-white/10 pt-3 flex items-center justify-between text-[10px] uppercase tracking-[0.2em] text-white/45">
+                  <span>Print WhatsApp</span>
+                  <span>9:16</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. Localização & Regras -->
+      <section id="localizacao" class="bg-[#F5F1E8] text-[#1C2421] py-20 sm:py-28 px-5 sm:px-8 border-t border-[#1C2421]/10">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+          <!-- Regras -->
+          <div class="lg:col-span-6 bg-[#EDE7DA]/60 p-7 sm:p-10 border border-[#1C2421]/10">
+            <p class="text-[11px] uppercase tracking-[0.26em] text-[#7A6B4F] mb-2 font-medium">Informações da Estadia</p>
+            <h2 class="font-serif-editorial text-3xl sm:text-4xl text-[#1C2421] mb-7">Horários & Regras da Casa</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div class="border-b border-[#1C2421]/10 pb-3.5">
+                <p class="text-[10px] uppercase tracking-[0.2em] text-[#7A6B4F]">Check-in</p>
+                <p class="mt-1 text-sm text-[#1C2421] font-medium">A partir das 14:00</p>
+              </div>
+              <div class="border-b border-[#1C2421]/10 pb-3.5">
+                <p class="text-[10px] uppercase tracking-[0.2em] text-[#7A6B4F]">Checkout</p>
+                <p class="mt-1 text-sm text-[#1C2421] font-medium">Antes das 12:00</p>
+              </div>
+              <div class="border-b border-[#1C2421]/10 pb-3.5">
+                <p class="text-[10px] uppercase tracking-[0.2em] text-[#7A6B4F]">Capacidade máxima</p>
+                <p class="mt-1 text-sm text-[#1C2421] font-medium">Até 10 hóspedes</p>
+              </div>
+              <div class="border-b border-[#1C2421]/10 pb-3.5">
+                <p class="text-[10px] uppercase tracking-[0.2em] text-[#7A6B4F]">Horário de silêncio</p>
+                <p class="mt-1 text-sm text-[#1C2421] font-medium">22:00 às 08:00</p>
+              </div>
+              <div class="border-b border-[#1C2421]/10 pb-3.5">
+                <p class="text-[10px] uppercase tracking-[0.2em] text-[#7A6B4F]">Política de eventos</p>
+                <p class="mt-1 text-sm text-[#1C2421] font-medium">Proibido festas, pets e fumo</p>
+              </div>
+              <div class="border-b border-[#1C2421]/10 pb-3.5">
+                <p class="text-[10px] uppercase tracking-[0.2em] text-[#7A6B4F]">Cuidados internos</p>
+                <p class="mt-1 text-sm text-[#1C2421] font-medium">Não entrar molhado na casa; 1 quarto trancado</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mapa -->
+          <div class="lg:col-span-6">
+            <div class="bg-[#EDE7DA] p-2 sm:p-3 border border-[#1C2421]/15 shadow-xl">
+              <div class="relative w-full h-[360px] sm:h-[420px] overflow-hidden bg-[#E6E0D4]">
+                <iframe
+                  title="Mapa da localização — Estrada do Limoeiro, Condomínio Alpha II, Guapimirim - RJ"
+                  src="https://maps.google.com/maps?q=Estrada%20do%20Limoeiro%2C%20Condom%C3%ADnio%20Alpha%20II%2C%20Guapimirim%20-%20RJ%2C%2025940-000&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  class="w-full h-full border-0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 10. Footer -->
+    <footer class="bg-[#07271E] text-[#F5F1E8] py-16 px-5 sm:px-8 border-t border-[#C9A45C]/20">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
+        <div>
+          <div class="flex items-center gap-4">
+            <img
+              src="images/logo-refugio.png"
+              alt="Refúgio das Cachoeiras"
+              class="w-16 h-16 object-contain shrink-0"
+            />
+            <div>
+              <p class="text-xs uppercase tracking-[0.28em] text-[#C9A45C] font-semibold">Refúgio Serra dos Órgãos</p>
+              <p class="text-xs text-white/65 mt-0.5">Estrada do Limoeiro, Condomínio Alpha II · Guapimirim - RJ, 25940-000</p>
+            </div>
+          </div>
+          <p class="mt-5 text-xs text-white/70 font-light leading-relaxed max-w-sm">
+            Casa inteira em condomínio cercado pela Mata Atlântica, a 10 minutos a pé do Parque Nacional da Serra dos Órgãos.
+          </p>
+        </div>
+
+        <div class="space-y-2.5 text-xs text-white/75">
+          <p class="text-[10px] uppercase tracking-[0.24em] text-[#C9A45C] font-medium mb-3">Navegação</p>
+          <div class="grid grid-cols-2 gap-y-2 gap-x-6">
+            <a href="#inicio" class="hover:text-[#C9A45C] transition-colors">Início</a>
+            <a href="#a-casa" class="hover:text-[#C9A45C] transition-colors">A Casa</a>
+            <a href="#destaques" class="hover:text-[#C9A45C] transition-colors">Destaques</a>
+            <a href="#espacos" class="hover:text-[#C9A45C] transition-colors">Espaços</a>
+            <a href="#comodidades" class="hover:text-[#C9A45C] transition-colors">Comodidades</a>
+            <a href="#localizacao" class="hover:text-[#C9A45C] transition-colors">Localização</a>
+          </div>
+        </div>
+
+        <div>
+          <p class="text-[10px] uppercase tracking-[0.24em] text-[#C9A45C] font-medium mb-3">Reservas & Contato</p>
+          <a
+            href="https://wa.me/5521998474055?text=Ol%C3%A1!%20Vi%20o%20site%20do%20Ref%C3%BAgio%20Serra%20dos%20%C3%93rg%C3%A3os%20em%20Guapimirim%20e%20gostaria%20de%20consultar%20disponibilidade%20para%20reserva."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2.5 bg-[#C9A45C] hover:bg-[#d8b56f] text-[#07271E] px-4 py-2.5 text-xs uppercase tracking-[0.18em] font-semibold transition-colors"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 10-7.8-4.5L3 21l4.6-1.2A8.96 8.96 0 0012 21z" />
+            </svg>
+            <span>(21) 99847-4055</span>
+          </a>
+          <p class="mt-4 text-[11px] text-white/50 leading-relaxed font-light">
+            Atendimento direto com a anfitriã. Consulte datas, tarifas para feriados e condições especiais.
+          </p>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-white/45">
+        <p>© 2026 Refúgio Serra dos Órgãos. Todos os direitos reservados.</p>
+        <p>Guapimirim · Rio de Janeiro · Brasil</p>
+      </div>
+    </footer>
+
+    <!-- 11. Modal de Reserva -->
+    <div
+      id="reserve-modal"
+      class="hidden fixed inset-0 z-50 bg-black/70 backdrop-blur-sm items-center justify-center p-4"
+      role="dialog"
+      aria-modal="true"
+    >
+      <div class="bg-[#F5F1E8] text-[#1C2421] w-full max-w-lg border border-[#C9A45C]/40 shadow-2xl overflow-hidden">
+        <div class="bg-[#0B3B2E] text-white px-7 py-6 flex items-start justify-between">
+          <div>
+            <p class="text-[10px] uppercase tracking-[0.26em] text-[#C9A45C] font-medium">Reserva Direta · WhatsApp (21) 99847-4055</p>
+            <h2 class="font-serif-editorial text-3xl mt-1">Refúgio Serra dos Órgãos</h2>
+            <p class="text-xs text-white/75 mt-1">10 hóspedes · 3 quartos · 6 camas · 3 banheiros</p>
+          </div>
+          <button
+            type="button"
+            id="close-reserve-btn"
+            class="p-1.5 text-white/75 hover:text-[#C9A45C] transition-colors cursor-pointer"
+            aria-label="Fechar"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="w-5 h-5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12M18 6L6 18" />
+            </svg>
+          </button>
+        </div>
+
+        <form id="reserve-form" class="p-7 space-y-5" onsubmit="event.preventDefault();">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="reserve-checkin" class="block text-[11px] uppercase tracking-[0.18em] text-[#7A6B4F] mb-1.5 font-medium">Check-in</label>
+              <input
+                id="reserve-checkin"
+                type="date"
+                class="w-full bg-[#EDE7DA] border border-[#1C2421]/20 px-3.5 py-2.5 text-xs text-[#1C2421] focus:outline-none focus:border-[#0B3B2E]"
+              />
+            </div>
+            <div>
+              <label for="reserve-checkout" class="block text-[11px] uppercase tracking-[0.18em] text-[#7A6B4F] mb-1.5 font-medium">Checkout</label>
+              <input
+                id="reserve-checkout"
+                type="date"
+                class="w-full bg-[#EDE7DA] border border-[#1C2421]/20 px-3.5 py-2.5 text-xs text-[#1C2421] focus:outline-none focus:border-[#0B3B2E]"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label for="reserve-guests" class="block text-[11px] uppercase tracking-[0.18em] text-[#7A6B4F] mb-1.5 font-medium">Número de Hóspedes</label>
+            <input
+              id="reserve-guests"
+              type="number"
+              min="1"
+              max="10"
+              value="4"
+              class="w-full bg-[#EDE7DA] border border-[#1C2421]/20 px-3.5 py-2.5 text-xs text-[#1C2421] focus:outline-none focus:border-[#0B3B2E]"
+            />
+            <p class="text-[10px] text-[#5A6560] mt-1">Capacidade confortável de até 10 pessoas.</p>
+          </div>
+
+          <div class="pt-2">
+            <a
+              id="reserve-whatsapp-submit"
+              href="https://wa.me/5521998474055?text=Ol%C3%A1!%20Vi%20o%20site%20do%20Ref%C3%BAgio%20Serra%20dos%20%C3%93rg%C3%A3os%20em%20Guapimirim%20e%20gostaria%20de%20consultar%20disponibilidade%20para%20reserva."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full inline-flex items-center justify-center gap-2.5 bg-[#C9A45C] hover:bg-[#d8b56f] text-[#07271E] py-4 text-xs tracking-[0.18em] uppercase font-semibold transition-colors"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 10-7.8-4.5L3 21l4.6-1.2A8.96 8.96 0 0012 21z" />
+              </svg>
+              <span>Consultar no WhatsApp</span>
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- 12. Modal de Galeria Completa -->
+    <div
+      id="gallery-modal"
+      class="hidden fixed inset-0 z-50 bg-[#07271E]/95 backdrop-blur-md flex-col text-white"
+      role="dialog"
+      aria-modal="true"
+    >
+      <!-- Top Bar -->
+      <div class="px-5 sm:px-8 py-4 border-b border-white/10 flex flex-wrap items-center justify-between gap-4 shrink-0">
+        <div class="flex flex-wrap items-center gap-2">
+          <button type="button" data-category="Todas" class="gallery-cat-btn px-3 py-1.5 text-xs uppercase tracking-[0.16em] transition-colors border border-[#C9A45C] bg-[#C9A45C] text-[#07271E] font-medium">Todas</button>
+          <button type="button" data-category="Exterior" class="gallery-cat-btn px-3 py-1.5 text-xs uppercase tracking-[0.16em] transition-colors border border-white/20 text-white/70 hover:text-white hover:border-white/40">Exterior</button>
+          <button type="button" data-category="Lazer" class="gallery-cat-btn px-3 py-1.5 text-xs uppercase tracking-[0.16em] transition-colors border border-white/20 text-white/70 hover:text-white hover:border-white/40">Lazer</button>
+          <button type="button" data-category="Gourmet" class="gallery-cat-btn px-3 py-1.5 text-xs uppercase tracking-[0.16em] transition-colors border border-white/20 text-white/70 hover:text-white hover:border-white/40">Gourmet</button>
+          <button type="button" data-category="Interior" class="gallery-cat-btn px-3 py-1.5 text-xs uppercase tracking-[0.16em] transition-colors border border-white/20 text-white/70 hover:text-white hover:border-white/40">Interior</button>
+          <button type="button" data-category="Quartos" class="gallery-cat-btn px-3 py-1.5 text-xs uppercase tracking-[0.16em] transition-colors border border-white/20 text-white/70 hover:text-white hover:border-white/40">Quartos</button>
+          <button type="button" data-category="Natureza" class="gallery-cat-btn px-3 py-1.5 text-xs uppercase tracking-[0.16em] transition-colors border border-white/20 text-white/70 hover:text-white hover:border-white/40">Natureza</button>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <span id="gallery-counter" class="text-xs tracking-widest text-white/70">1 / 23</span>
+          <button
+            type="button"
+            id="close-gallery-btn"
+            class="p-2 text-white/70 hover:text-white transition-colors cursor-pointer"
+            aria-label="Fechar galeria"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" class="w-5 h-5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 6l12 12M18 6L6 18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Main Viewer -->
+      <div class="relative flex-1 flex items-center justify-center p-4 sm:p-8 min-h-0">
+        <button
+          type="button"
+          id="prev-gallery-btn"
+          aria-label="Foto anterior"
+          class="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 z-10 w-11 h-11 rounded-full bg-black/40 hover:bg-[#C9A45C] hover:text-[#07271E] text-white flex items-center justify-center transition-all cursor-pointer backdrop-blur-sm"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-5 h-5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 6l-6 6 6 6" />
+          </svg>
+        </button>
+
+        <div class="max-w-5xl max-h-full flex flex-col items-center">
+          <img
+            id="gallery-current-img"
+            src="images/hero-exterior.jpg"
+            alt="Foto do refúgio"
+            class="max-h-[68vh] max-w-full object-contain shadow-2xl"
+          />
+          <div class="mt-4 text-center">
+            <p id="gallery-current-title" class="font-serif-editorial text-xl sm:text-2xl text-white">Fachada e Serra dos Órgãos</p>
+            <p id="gallery-current-category" class="text-[10px] uppercase tracking-[0.22em] text-[#C9A45C] mt-1 font-medium">Exterior</p>
+          </div>
+        </div>
+
+        <button
+          type="button"
+          id="next-gallery-btn"
+          aria-label="Próxima foto"
+          class="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 z-10 w-11 h-11 rounded-full bg-black/40 hover:bg-[#C9A45C] hover:text-[#07271E] text-white flex items-center justify-center transition-all cursor-pointer backdrop-blur-sm"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="w-5 h-5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 6l6 6-6 6" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Thumbs Track -->
+      <div id="gallery-thumbs-track" class="px-4 py-3 border-t border-white/10 flex items-center gap-2 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden shrink-0"></div>
+    </div>
+
+    <!-- Main JavaScript Logic -->
+    <script src="script.js"></script>
+  </body>
+</html>

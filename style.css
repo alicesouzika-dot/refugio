@@ -1,0 +1,52 @@
+/* Custom CSS Variables & Typography */
+:root {
+  --emerald-deep: #0B3B2E;
+  --emerald-dark: #07271E;
+  --cream-warm: #F5F1E8;
+  --cream-card: #EDE7DA;
+  --gold-brushed: #C9A45C;
+  --ink-dark: #1C2421;
+  --ink-muted: #5A6560;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: var(--cream-warm);
+  color: var(--ink-dark);
+}
+
+.font-serif-editorial {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-sans-clean {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-text-enter {
+  animation: heroFadeUp 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #EDE7DA;
+}
+::-webkit-scrollbar-thumb {
+  background: #0B3B2E;
+  border-radius: 4px;
+}
