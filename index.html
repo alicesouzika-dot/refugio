@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Refúgio das Cachoeiras — Casa em Guapimirim · Serra dos Órgãos</title>
+    <link rel="icon" type="image/png" href="images/logo-refugio.png" />
     <meta
       name="description"
       content="Casa inteira de alto padrão para até 10 hóspedes em condomínio fechado com cachoeiras privativas em Guapimirim, a 10 min a pé do Parque Nacional da Serra dos Órgãos."
@@ -146,13 +147,20 @@
             ></video>
           </div>
 
-          <!-- Scene 2: Piscina Foto -->
+          <!-- Scene 2: Piscina Video (Desktop 16:9 / Mobile 9:16) -->
           <div class="hero-scene absolute inset-0 will-change-transform" style="opacity: 0; transform: scale(1.0); transition: opacity 180ms linear;">
-            <img
-              src="images/hero-piscina-noite.jpg"
-              alt="Piscina iluminada à noite"
-              class="w-full h-full object-cover object-center select-none"
-            />
+            <video
+              data-desktop-src="videos/hero-scroll2-desktop.mp4"
+              data-mobile-src="videos/hero-scroll2-mobile.mp4"
+              src="videos/hero-scroll2-desktop.mp4"
+              poster="images/hero-piscina-noite.jpg"
+              autoplay
+              loop
+              muted
+              playsinline
+              preload="auto"
+              class="w-full h-full object-cover object-center select-none pointer-events-none"
+            ></video>
           </div>
 
           <!-- Scene 3: Cachoeira Video (Desktop 16:9 / Mobile 9:16) -->
@@ -179,7 +187,7 @@
           <div class="relative z-10 h-full max-w-7xl mx-auto px-5 sm:px-8 pt-24 flex flex-col justify-end pb-20 sm:pb-24">
             <div class="max-w-2xl hero-text-enter">
               <p id="hero-eyebrow" class="text-[11px] sm:text-xs uppercase tracking-[0.28em] text-[#C9A45C] mb-4 font-medium">
-                Guapimirim · Cidade do Dedo de Deus
+                Cidade do Dedo de Deus
               </p>
 
               <h1 id="hero-headline" class="font-serif-editorial text-4xl sm:text-6xl lg:text-[4.75rem] leading-[1.03] font-normal text-white whitespace-pre-line drop-shadow-sm">
@@ -205,40 +213,6 @@
                 </a>
               </div>
             </div>
-
-            <!-- Scene Chapters Indicator (Bottom Right) -->
-            <div class="hidden md:flex items-center gap-3 absolute right-8 bottom-24">
-              <button
-                type="button"
-                data-index="0"
-                class="hero-chapter-btn flex items-center gap-2 px-3 py-1.5 text-[10px] tracking-[0.22em] uppercase transition-all cursor-pointer border border-[#C9A45C] bg-[#0B3B2E]/85 text-[#C9A45C]"
-              >
-                <span>01</span>
-              </button>
-              <button
-                type="button"
-                data-index="1"
-                class="hero-chapter-btn flex items-center gap-2 px-3 py-1.5 text-[10px] tracking-[0.22em] uppercase transition-all cursor-pointer border border-white/25 bg-black/25 text-white/70 hover:text-white hover:border-white/50"
-              >
-                <span>02</span>
-              </button>
-              <button
-                type="button"
-                data-index="2"
-                class="hero-chapter-btn flex items-center gap-2 px-3 py-1.5 text-[10px] tracking-[0.22em] uppercase transition-all cursor-pointer border border-white/25 bg-black/25 text-white/70 hover:text-white hover:border-white/50"
-              >
-                <span>03</span>
-              </button>
-            </div>
-          </div>
-
-          <!-- Bottom Center Scroll Indicator -->
-          <div
-            id="hero-scroll-indicator"
-            class="absolute bottom-7 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 pointer-events-none transition-opacity duration-500"
-          >
-            <span class="text-[10px] tracking-[0.35em] uppercase text-white/80">Scroll</span>
-            <span class="w-px h-7 bg-gradient-to-b from-white/80 to-transparent animate-pulse"></span>
           </div>
         </div>
       </section>
@@ -247,16 +221,20 @@
       <section id="a-casa" class="bg-[#F5F1E8] text-[#1C2421]">
         <div class="max-w-3xl mx-auto px-6 pt-24 pb-16 sm:pt-32 sm:pb-20 text-center">
           <p class="text-[11px] uppercase tracking-[0.28em] text-[#7A6B4F] mb-4 font-medium">
-            Estrada do Limoeiro, Condomínio Alpha II · Guapimirim - RJ, 25940-000
+            REFÚGIO DAS CACHOEIRAS
           </p>
           <h2 class="font-serif-editorial text-4xl sm:text-5xl lg:text-[3.65rem] leading-[1.08] font-normal text-[#1C2421]">
-            Mais Que Quatro Paredes
+            QUEM SOMOS
           </h2>
           <p class="mt-7 text-sm sm:text-base leading-[1.85] text-[#5A6560] font-light">
-            As manhãs tranquilas, os almoços longos na varanda gourmet, os momentos que reúnem família
-            e amigos — a vida desacelera aqui. Cercada pela Mata Atlântica e a cerca de 10 minutos a
-            pé do Parque Nacional da Serra dos Órgãos, a casa oferece ampla área verde, caminhos
-            arborizados, piscina privativa, lareira interna e o som constante da cachoeira dia e noite.
+            Entre a paisagem das montanhas e o som da água, em Guapimirim, fica um refúgio pensado
+            para quem quer desacelerar. Nossa casa recebe até 10 hóspedes e foi preparada para reunir
+            família e amigos em torno do que importa: boa conversa e tempo de qualidade.
+          </p>
+          <p class="mt-4 text-sm sm:text-base leading-[1.85] text-[#5A6560] font-light">
+            A propriedade conta com ampla área verde, caminhos arborizados e paisagens que convidam
+            ao descanso. O condomínio dá acesso a duas cachoeiras e, além disso, a casa é um ótimo
+            ponto de partida para trilhas e para quem deseja viver de perto a natureza da região.
           </p>
         </div>
 
@@ -364,10 +342,10 @@
       <section id="espacos" class="bg-[#F5F1E8] text-[#1C2421] py-20 sm:py-28 px-5 sm:px-8">
         <div class="max-w-7xl mx-auto">
           <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
-            <p class="text-[11px] uppercase tracking-[0.28em] text-[#7A6B4F] mb-3 font-medium">Experiências & Ambientes</p>
-            <h2 class="font-serif-editorial text-4xl sm:text-5xl lg:text-[3.6rem] font-normal text-[#1C2421]">Refúgio na natureza</h2>
+            <p class="text-[11px] uppercase tracking-[0.28em] text-[#7A6B4F] mb-3 font-medium">Ambientes</p>
+            <h2 class="font-serif-editorial text-4xl sm:text-5xl lg:text-[3.6rem] font-normal text-[#1C2421]">Experiências do Refúgio</h2>
             <p class="mt-4 text-sm sm:text-base text-[#5A6560] font-light leading-relaxed">
-              Uma curadoria de espaços pensados para desacelerar em família ou entre amigos — da piscina iluminada às trilhas e cachoeiras da Mata Atlântica.
+              Uma curadoria de espaços pensados para desacelerar em família ou entre amigos.
             </p>
           </div>
 
@@ -381,7 +359,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4 text-[#C9A45C]">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3 9c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 2-2M3 15c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 2-2" />
               </svg>
-              <span>ÁREA EXTERNA & LAZER</span>
+              <span>CACHOEIRA</span>
               <span class="tab-underline absolute -bottom-[17px] left-0 right-0 h-[2px] bg-[#0B3B2E]"></span>
             </button>
             <button
@@ -392,7 +370,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4 text-[#C9A45C]">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3 11l9-7 9 7v9a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1v-9z" />
               </svg>
-              <span>CONFORTO INTERNO</span>
+              <span>LAZER</span>
             </button>
             <button
               type="button"
@@ -402,7 +380,7 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="w-4 h-4 text-[#C9A45C]">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3 19l6-10 4 6 3-4 5 8H3z" />
               </svg>
-              <span>CONDOMÍNIO & SERRA</span>
+              <span>CONDOMÍNIO</span>
             </button>
           </div>
 
@@ -416,8 +394,8 @@
         <div class="bg-[#0B3B2E] text-white py-20 sm:py-28 px-5 sm:px-8">
           <div class="max-w-7xl mx-auto">
             <div class="mb-10 sm:mb-12">
-              <p class="text-[11px] uppercase tracking-[0.28em] text-[#C9A45C] mb-2 font-medium">Acomodações · 10 Hóspedes</p>
-              <h2 class="font-serif-editorial text-3xl sm:text-5xl font-normal text-[#F5F1E8]">Onde Você Vai Dormir</h2>
+              <p class="text-[11px] uppercase tracking-[0.28em] text-[#C9A45C] mb-2 font-medium">Acomodações</p>
+              <h2 class="font-serif-editorial text-3xl sm:text-5xl font-normal text-[#F5F1E8]">Nossos Quartos</h2>
             </div>
 
             <div class="relative">
@@ -720,10 +698,10 @@
       <section id="feedbacks" class="bg-[#0B3B2E] text-[#F5F1E8] py-20 sm:py-28 px-5 sm:px-8">
         <div class="max-w-7xl mx-auto">
           <div class="max-w-2xl mb-10 sm:mb-12">
-            <p class="text-[11px] uppercase tracking-[0.28em] text-[#C9A45C] mb-2 font-medium">Feedbacks · Conversas Reais</p>
+            <p class="text-[11px] uppercase tracking-[0.28em] text-[#C9A45C] mb-2 font-medium">Conversas Reais</p>
             <h3 class="font-serif-editorial text-3xl sm:text-4xl lg:text-5xl text-white">Feedbacks de Hóspedes</h3>
             <p class="mt-2.5 text-xs sm:text-sm text-white/75 font-light max-w-xl">
-              Prints de conversas e avaliações enviadas por quem já viveu a experiência no refúgio.
+              Avaliações enviadas por quem já viveu a experiência no refúgio.
             </p>
           </div>
 
@@ -921,13 +899,10 @@
               class="w-16 h-16 object-contain shrink-0"
             />
             <div>
-              <p class="text-xs uppercase tracking-[0.28em] text-[#C9A45C] font-semibold">Refúgio Serra dos Órgãos</p>
-              <p class="text-xs text-white/65 mt-0.5">Estrada do Limoeiro, Condomínio Alpha II · Guapimirim - RJ, 25940-000</p>
+              <p class="text-xs uppercase tracking-[0.28em] text-[#C9A45C] font-semibold">Refúgio das Cachoeiras</p>
+              <p class="text-xs text-white/65 mt-0.5">Entre o som da água e o verde de Guapimirim, encontre dias de paz e descanso na natureza.</p>
             </div>
           </div>
-          <p class="mt-5 text-xs text-white/70 font-light leading-relaxed max-w-sm">
-            Casa inteira em condomínio cercado pela Mata Atlântica, a 10 minutos a pé do Parque Nacional da Serra dos Órgãos.
-          </p>
         </div>
 
         <div class="space-y-2.5 text-xs text-white/75">
@@ -956,14 +931,14 @@
             <span>(21) 99847-4055</span>
           </a>
           <p class="mt-4 text-[11px] text-white/50 leading-relaxed font-light">
-            Atendimento direto com a anfitriã. Consulte datas, tarifas para feriados e condições especiais.
+            Fale diretamente com a proprietária e consulte datas, tarifas para feriados e condições especiais.
           </p>
         </div>
       </div>
 
       <div class="max-w-7xl mx-auto mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-white/45">
-        <p>© 2026 Refúgio Serra dos Órgãos. Todos os direitos reservados.</p>
-        <p>Guapimirim · Rio de Janeiro · Brasil</p>
+        <p>© 2026 Refúgio das Cachoeiras. Todos os direitos reservados.</p>
+        <p>Guapimirim-RJ</p>
       </div>
     </footer>
 

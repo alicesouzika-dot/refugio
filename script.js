@@ -20,6 +20,10 @@ const FULL_GALLERY = [
   { src: 'images/card-quarto3.jpg', title: 'Quarto 3 · 2 Casal + Beliche', category: 'Quartos' },
   { src: 'images/card-banheiro.jpg', title: 'Banheiro Completo', category: 'Quartos' },
   { src: 'images/hero-cachoeira.jpg', title: 'Cachoeira do Condomínio', category: 'Natureza' },
+  { src: 'images/card-cachoeira-1.jpg', title: 'Queda d’Água da Cachoeira', category: 'Natureza' },
+  { src: 'images/card-cachoeira-2.jpg', title: 'Poço de Águas Cristalinas', category: 'Natureza' },
+  { src: 'images/card-cachoeira-3.jpg', title: 'Corredeira Natural', category: 'Natureza' },
+  { src: 'images/card-cachoeira-4.jpg', title: 'Pedras e Águas da Serra', category: 'Natureza' },
   { src: 'images/card-serra.jpg', title: 'Montanhas da Serra dos Órgãos', category: 'Natureza' },
   { src: 'images/card-campo.jpg', title: 'Campo de Futebol em Frente', category: 'Natureza' },
   { src: 'images/card-condominio.jpg', title: 'Alameda Arborizada do Condomínio', category: 'Natureza' },
@@ -31,25 +35,25 @@ const SPACE_CATEGORIES = {
       eyebrow: 'ÁREA EXTERNA',
       title: 'Piscina Exclusiva',
       description: 'Piscina ampla privativa, cercada por gramado verde e espreguiçadeiras com vista para a serra.',
-      image: 'images/card-piscina-dia.jpg',
+      image: 'images/card-cachoeira-1.jpg',
     },
     {
       eyebrow: 'CONVIVÊNCIA',
       title: 'Pátio ao Ar Livre',
       description: 'Espaço aberto para café da manhã ao sol, banho de ducha externa e fins de tarde relaxantes.',
-      image: 'images/card-cafe-piscina.jpg',
+      image: 'images/card-cachoeira-2.jpg',
     },
     {
       eyebrow: 'EXPERIÊNCIA',
       title: 'Espaço Bartender',
       description: 'Bancada exclusiva integrada à varanda gourmet para preparar drinks e reunir amigos.',
-      image: 'images/card-bartender.jpg',
+      image: 'images/card-cachoeira-3.jpg',
     },
     {
       eyebrow: 'RELAXAMENTO',
       title: 'Varanda com Rede',
       description: 'Rede preguiçosa com vista para os jardins e brisa fresca vinda da floresta tropical.',
-      image: 'images/card-rede.jpg',
+      image: 'images/card-cachoeira-4.jpg',
     },
   ],
   interior: [
@@ -109,17 +113,17 @@ const SPACE_CATEGORIES = {
 const HERO_SCENES_DATA = [
   {
     id: 'serra',
-    eyebrow: 'Guapimirim · Cidade do Dedo de Deus',
+    eyebrow: 'Cidade do Dedo de Deus',
     headline: 'Um Refúgio Que\nAbraça a Natureza',
   },
   {
     id: 'piscina',
-    eyebrow: 'Lazer Privativo · Dia e Noite',
+    eyebrow: 'Lazer Privativo',
     headline: 'Desenhada Para\nMomentos Reais',
   },
   {
     id: 'cachoeira',
-    eyebrow: 'Mata Atlântica · Condomínio Fechado',
+    eyebrow: 'Condomínio Fechado',
     headline: 'O Som da Cachoeira\nDia e Noite',
   },
 ];
@@ -158,8 +162,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const sceneElements = document.querySelectorAll('.hero-scene');
   const eyebrowEl = document.getElementById('hero-eyebrow');
   const headlineEl = document.getElementById('hero-headline');
-  const chapterBtns = document.querySelectorAll('.hero-chapter-btn');
-  const scrollIndicator = document.getElementById('hero-scroll-indicator');
 
   let currentActiveIndex = 0;
 
@@ -204,35 +206,12 @@ document.addEventListener('DOMContentLoaded', () => {
         void eyebrowEl.parentElement.offsetWidth; // trigger reflow
         eyebrowEl.parentElement.classList.add('hero-text-enter');
       }
-
-      chapterBtns.forEach((btn, bIdx) => {
-        if (bIdx === activeIndex) {
-          btn.className = 'hero-chapter-btn flex items-center gap-2 px-3 py-1.5 text-[10px] tracking-[0.22em] uppercase transition-all cursor-pointer border border-[#C9A45C] bg-[#0B3B2E]/85 text-[#C9A45C]';
-        } else {
-          btn.className = 'hero-chapter-btn flex items-center gap-2 px-3 py-1.5 text-[10px] tracking-[0.22em] uppercase transition-all cursor-pointer border border-white/25 bg-black/25 text-white/70 hover:text-white hover:border-white/50';
-        }
-      });
-    }
-
-    if (scrollIndicator) {
-      scrollIndicator.style.opacity = progress > 0.12 ? '0' : '1';
     }
   }
 
   window.addEventListener('scroll', updateHero, { passive: true });
   window.addEventListener('resize', updateHero, { passive: true });
   updateHero();
-
-  // Jump to Scene by clicking chapter button
-  chapterBtns.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const targetIndex = parseInt(btn.dataset.index, 10);
-      const scrollable = heroSection.offsetHeight - window.innerHeight;
-      const targets = [0, 0.48, 0.92];
-      const targetTop = heroSection.offsetTop + scrollable * (targets[targetIndex] ?? 0);
-      window.scrollTo({ top: targetTop, behavior: 'smooth' });
-    });
-  });
 
   // 4. Responsive Video Selection (Desktop 16:9 vs Mobile 9:16)
   function initHeroVideos() {
@@ -270,10 +249,6 @@ document.addEventListener('DOMContentLoaded', () => {
               <h3 class="font-serif-editorial text-2xl text-[#1C2421] mt-1.5 leading-snug">${card.title}</h3>
               <p class="mt-3 text-xs sm:text-[13px] text-[#5A6560] font-light leading-relaxed">${card.description}</p>
             </div>
-            <button type="button" class="open-gallery-btn mt-6 inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-[#0B3B2E] font-medium hover:text-[#C9A45C] transition-colors cursor-pointer self-start" data-img="${card.image}">
-              <span>Ver Foto</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" class="w-3.5 h-3.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6l6 6-6 6"></path></svg>
-            </button>
           </div>
         </article>
       `
