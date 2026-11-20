@@ -50,3 +50,14 @@ html {
   background: #0B3B2E;
   border-radius: 4px;
 }
+
+/* Hide iOS Safari native play button overlay on background videos */
+.hero-video::-webkit-media-controls,
+.hero-video::-webkit-media-controls-panel,
+.hero-video::-webkit-media-controls-play-button,
+.hero-video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}

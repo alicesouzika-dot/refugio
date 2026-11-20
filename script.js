@@ -213,21 +213,69 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('resize', updateHero, { passive: true });
   updateHero();
 
-  // 4. Responsive Video Selection (Desktop 16:9 vs Mobile 9:16)
-  function initHeroVideos() {
-    const isMobile = window.innerWidth < 768;
-    const heroVideos = document.querySelectorAll('video[data-mobile-src]');
+  // 4. Responsive Video Selection & Mobile Autoplay (Desktop 16:9 vs Mobile 9:16)
+  const heroVideos = document.querySelectorAll('video[data-mobile-src]');
+  let lastIsMobile = null;
+
+  function tryPlayVideo(vid) {
+    vid.muted = true;
+    vid.defaultMuted = true;
+    vid.playsInline = true;
+    const playPromise = vid.play();
+    if (playPromise && typeof playPromise.catch === 'function') {
+      playPromise.catch(() => {});
+    }
+  }
+
+  function playAllHeroVideos() {
     heroVideos.forEach((vid) => {
-      const targetSrc = isMobile ? vid.dataset.mobileSrc : vid.dataset.desktopSrc;
-      if (vid.getAttribute('src') !== targetSrc) {
-        vid.setAttribute('src', targetSrc);
-        vid.load();
-        vid.play().catch(() => {});
-      }
+      if (vid.paused) tryPlayVideo(vid);
     });
   }
+
+  function initHeroVideos() {
+    const isMobile = window.innerWidth < 768;
+    if (lastIsMobile === isMobile) return;
+    lastIsMobile = isMobile;
+
+    heroVideos.forEach((vid) => {
+      const targetSrc = isMobile ? vid.dataset.mobileSrc : vid.dataset.desktopSrc;
+      vid.muted = true;
+      vid.defaultMuted = true;
+      vid.playsInline = true;
+      vid.setAttribute('muted', '');
+      vid.setAttribute('playsinline', '');
+      vid.setAttribute('webkit-playsinline', '');
+
+      if (vid.getAttribute('src') !== targetSrc) {
+        vid.setAttribute('src', targetSrc);
+        vid.addEventListener('loadeddata', () => tryPlayVideo(vid), { once: true });
+        vid.addEventListener('canplay', () => tryPlayVideo(vid), { once: true });
+        vid.load();
+      }
+      tryPlayVideo(vid);
+    });
+  }
+
   initHeroVideos();
-  window.addEventListener('resize', initHeroVideos);
+  window.addEventListener('resize', initHeroVideos, { passive: true });
+
+  // Unlock playback on first interaction (handles iOS Low Power Mode & strict mobile autoplay)
+  const unlockHeroVideos = () => {
+    playAllHeroVideos();
+    const allPlaying = Array.from(heroVideos).every((v) => !v.paused);
+    if (allPlaying) {
+      window.removeEventListener('touchstart', unlockHeroVideos);
+      window.removeEventListener('pointerdown', unlockHeroVideos);
+      window.removeEventListener('click', unlockHeroVideos);
+    }
+  };
+  window.addEventListener('touchstart', unlockHeroVideos, { passive: true });
+  window.addEventListener('pointerdown', unlockHeroVideos, { passive: true });
+  window.addEventListener('click', unlockHeroVideos, { passive: true });
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) playAllHeroVideos();
+  });
 
   // 5. Space Categories Tabs
   const spaceTabBtns = document.querySelectorAll('.space-tab-btn');
